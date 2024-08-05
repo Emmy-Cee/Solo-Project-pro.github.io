@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+        <title>Basket Ball Scoreboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="-1">
+        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23000000%22></rect><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2260%22>🏀</text></svg>" />
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3 id="home-title">HOME</h3>
+                <div id="content-1">
+                    <p id="home-scores">0</p>
+                </div>
+                <div id="scores-1">
+                    <button onclick="add1()">+1</button>
+                    <button onclick="add2()">+2</button>
+                    <button onclick="add3()">+3</button>
+                </div>
+            </div>
+            <div>
+                <h3 id="guest-title">GUEST</h3>
+                <div id="content-2">
+                    <p id="guest-scores">0</p>
+                </div>
+                <div id="scores-2">
+                    <button onclick="add1Value()">+1</button>
+                    <button onclick="add2Value()">+2</button>
+                    <button onclick="add3Value()">+3</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+    <footer>
+        <small>AUTHOR:Emmanuel Atat(Emmy Cee)___&copy;___</small>
+    </footer>
+</html>
