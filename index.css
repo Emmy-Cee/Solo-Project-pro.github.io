@@ -7,25 +7,36 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
-    background: 10px solid white;
     background-color: #1B244A;
     margin: auto;
     width: 575px;
-    height: 385px;
+    height: 387px;
     border-radius: 15px;
 }
 
-#home-title, #guest-title {
+#timer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B244A;
+    width: 400px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 10px auto auto auto;
+}
+
+#home-title, #guest-title, #timer-title {
     width: 149px;
     height: 36px;
-    gap: 0px;
-    opacity: 0px;
     font-family: Verdana;
     font-size: 40px;
     font-weight: 400;
     line-height: 35px;
     text-align: center;
     color: #EEEEEE
+}
+
+#timer-title {
+    align-self: center;
 }
 
 #home-title{
@@ -51,6 +62,19 @@ body {
     border-radius: 5px;
 }
 
+#content-3 {
+    width: 220px;
+    height: 110px;
+    background: black;
+    font-family: Cursed Timer ULiL;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 126.67px;
+    align-self: center;
+    margin: auto;
+    border-radius: 5px;
+}
+
 #home-scores, #guest-scores{
     width: 117px;
     height: 120px;
@@ -61,6 +85,20 @@ body {
     font-weight: 400;
     line-height: 126.67px;
     text-align: center;
+    color: #F94F6D;
+}
+
+#time {
+    width: 115px;
+    height: 100px;
+    position: relative;
+    bottom: 105px;
+    left: auto;
+    font-family: Cursed Timer ULiL;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 126.67px;
+    align-content: center;
     color: #F94F6D;
 }
 
@@ -88,4 +126,8 @@ button{
 
 button:hover {
     box-shadow: 0 1px 3px 3px #9AABA0;
+}
+
+#message{
+    height: 30px;
 }
