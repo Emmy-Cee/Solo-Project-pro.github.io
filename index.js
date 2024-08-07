@@ -50,19 +50,19 @@ if (timer === "48:0") {
     time = 0
     let homeScore = output1;
     let guestScore = output2;
-    // let messageOutput = document.getElementById("message")
+    let messageOutput = document.getElementById("message")
     // Function to identify the team with the highest score
-        function getHighestScoringTeam() {
-        if (homeScore > guestScore) {
-            // messageOutput.textContent = "Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍"
-            console.log("Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍")
+function getHighestScoringTeam() {
+    if (homeScore > guestScore) {
+        messageOutput.innerHTML = "<p id='first-message'>Game Over</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
+        console.log("Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍");
         return messageOutput;
-        } else if (guestScore > homeScore) {
-            // messageOutput.textContent = "Whoo! The Guest team has won😃😃" + "Home team strive harder👍👍"
-            console.log("Whoo! The Guest team has won😃😃" + "Home team strive harder👍👍")
+    } else if (guestScore > homeScore) {
+        messageOutput.innerHTML = "<p id='first-message'>Game Over</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
+        console.log("Whoo! The Guest team has won😃😃" + "Home team strive harder👍👍");
         return messageOutput;
-        } else {
+    } else {
         return "Both teams have the same score";
-        }
-        }
+    }
+}
 }
