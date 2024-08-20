@@ -46,7 +46,7 @@ function add3Value() {
 }
 
 //Pop-up message response-code: not working
-if (timer === "48:0") {
+if (timer === "48:0" ) {
     time = 0
     let homeScore = output1;
     let guestScore = output2;
