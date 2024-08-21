@@ -1,4 +1,8 @@
-// Set the initial time in seconds
+document.addEventListener("DOMContentLoaded", function(){
+
+    console.log("Script loaded");
+
+    // Set the initial time in seconds
 let time = 0;
 let timer = document.getElementById("time")
 // Create a function to update the timer every second
@@ -75,41 +79,51 @@ function updateTimer() {
         }
     }
 }
-
 // Call the updateTimer function every second (1000 milliseconds for 1 second)
 setInterval(updateTimer, 1000);
 
 
-
-let count = 0
-let output1 = document.getElementById("home-scores")
 function startCounting(){
-    function add1() {
-        count ++
-        output1.textContent = count
-    }
-    function add2() {
-        count += 2
-        output1.textContent = count
-    }
-    function add3() {
-        count += 3
-        output1.textContent = count
-    }
-    
-    let value = 0
-    let output2 = document.getElementById("guest-scores")
-    function add1Value() {
-        value += 1
-        output2.textContent = value
-    }
-    function add2Value() {
-        value += 2
-        output2.textContent = value
-    }
-    function add3Value() {
-        value += 3
-        output2.textContent = value
-    }
-    
+    let count = 0
+    let output1 = document.getElementById("home-scores")
+        function add1() {
+            count ++
+            output1.textContent = count
+        }
+        function add2() {
+            count += 2
+            output1.textContent = count
+        }
+        function add3() {
+            count += 3
+            output1.textContent = count
+        }
+        
+        document.getElementById("home-add1").addEventListener("click", add1)
+        document.getElementById("home-add2").addEventListener("click", add2)
+        document.getElementById("home-add3").addEventListener("click", add3)
+
+        let value = 0
+        let output2 = document.getElementById("guest-scores")
+        function add1Value() {
+            value ++
+            output2.textContent = value
+        }
+        function add2Value() {
+            value += 2
+            output2.textContent = value
+        }
+        function add3Value() {
+            value += 3
+            output2.textContent = value
+        }
+        document.getElementById("guest-add1").addEventListener("click", add1Value)
+        document.getElementById("guest-add2").addEventListener("click", add2Value)
+        document.getElementById("guest-add3").addEventListener("click", add3Value)
+
+document.querySelector(".startGame").addEventListener("click", startCounting)
+
 }
+startCounting();
+});
+
