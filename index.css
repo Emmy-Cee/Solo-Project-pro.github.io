@@ -1,6 +1,5 @@
 body {
     margin: auto;
-    padding: auto;
     background: grey;
 }
 
@@ -119,7 +118,6 @@ button{
     font-size: 25px;
     background: #9AABD8;
     border: 2px solid #9AABD8;
-    opacity: 0px;
     border-radius: 5px 0px 5px 0px;
     align-self: center;
 }
