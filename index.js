@@ -30,54 +30,56 @@ function updateTimer() {
             } else {
                 return "Both teams have the same score";
             }
-    }
-} else if (time === 1440) {
-    function getHighestScoringTeam() {
-        if (homeScore > guestScore) {
-            messageOutput.innerHTML = "<p id='first-message'>End of 2nd Quarter</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
-            // console.log("Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍");
-            return messageOutput;
-        } else if (guestScore > homeScore) {
-            messageOutput.innerHTML = "<p id='first-message'>End of 2nd Quarter</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
-            // console.log("Whoo! The Guest team has won😃😃" + "Home team strive harder👍👍");
-            return messageOutput;
-        } else {
-            return "Both teams have the same score";
         }
-    }
-} else if (time === 2160) {
-    function getHighestScoringTeam() {
-        if (homeScore > guestScore) {
-            messageOutput.innerHTML = "<p id='first-message'>End of 3rd Quarter</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
-            // console.log("Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍");
-            return messageOutput;
-        } else if (guestScore > homeScore) {
-            messageOutput.innerHTML = "<p id='first-message'>End of 3rd Quarter</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
-            // console.log("Whoo! The Guest team has won😃😃" + "Home team strive harder👍👍");
-            return messageOutput;
-        } else {
-            return "Both teams have the same score";
+    } else if (time === 1440) {
+        function getHighestScoringTeam() {
+            if (homeScore > guestScore) {
+                messageOutput.innerHTML = "<p id='first-message'>End of 2nd Quarter</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
+                // console.log("Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍");
+                return messageOutput;
+            } else if (guestScore > homeScore) {
+                messageOutput.innerHTML = "<p id='first-message'>End of 2nd Quarter</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
+                // console.log("Whoo! The Guest team has won😃😃" + "Home team strive harder👍👍");
+                return messageOutput;
+            } else {
+                return "Both teams have the same score";
+            }
         }
-    }
-} else if (time === 2880){
-    function getHighestScoringTeam() {
-        if (homeScore > guestScore) {
-            messageOutput.innerHTML = "<p id='first-message'>End of Game</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
-            // console.log("Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍");
-            return messageOutput;
-        } else if (guestScore > homeScore) {
-            messageOutput.innerHTML = "<p id='first-message'>End of Game</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
-            // console.log("Whoo! The Guest team has won😃😃" + "Home team strive harder👍👍");
-            return messageOutput;
-        } else {
-            return "Both teams have the same score";
+    } else if (time === 2160) {
+        function getHighestScoringTeam() {
+            if (homeScore > guestScore) {
+                messageOutput.innerHTML = "<p id='first-message'>End of 3rd Quarter</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
+                // console.log("Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍");
+                return messageOutput;
+            } else if (guestScore > homeScore) {
+                messageOutput.innerHTML = "<p id='first-message'>End of 3rd Quarter</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
+                // console.log("Whoo! The Guest team has won😃😃" + "Home team strive harder👍👍");
+                return messageOutput;
+            } else {
+                return "Both teams have the same score";
+            }
+        }
+    } else if (time === 2880){
+        function getHighestScoringTeam() {
+            if (homeScore > guestScore) {
+                messageOutput.innerHTML = "<p id='first-message'>End of Game</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
+                // console.log("Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍");
+                return messageOutput;
+            } else if (guestScore > homeScore) {
+                messageOutput.innerHTML = "<p id='first-message'>End of Game</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
+                // console.log("Whoo! The Guest team has won😃😃" + "Home team strive harder👍👍");
+                return messageOutput;
+            } else {
+                return "Both teams have the same score";
+            }
         }
     }
 }
 
-
 // Call the updateTimer function every second (1000 milliseconds for 1 second)
 setInterval(updateTimer, 1000);
+
+
 
 let count = 0
 let output1 = document.getElementById("home-scores")
@@ -110,5 +112,4 @@ function startCounting(){
         output2.textContent = value
     }
     
-}
 }
