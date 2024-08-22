@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: space-around;
     background-color: #1B244A;
-    width: 570px;
+    width: 400px;
     height: 150px;
     border-radius: 5px;
     margin: 10px auto auto auto;
@@ -127,14 +127,16 @@ button:hover {
 }
 
 button.startGame{
+    /* margin: 10px; */
     width: auto;
     height: auto;
-    align-self: center;
+    align-content: center;
     margin: auto 5px auto 5px;
 }
 
 #message{
     height: 30px;
+    margin: 10px;
 }
 
 img {
