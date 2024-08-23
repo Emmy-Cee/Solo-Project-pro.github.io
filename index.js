@@ -36,6 +36,7 @@ function updateTimer() {
                 return "Both teams have the same score";
             }
         }
+        getHighestScoringTeam();
     } else if (time === 1440) {
         function getHighestScoringTeam() {
             if (homeScore > guestScore) {
@@ -50,6 +51,7 @@ function updateTimer() {
                 return "Both teams have the same score";
             }
         }
+        getHighestScoringTeam();
     } else if (time === 2160) {
         function getHighestScoringTeam() {
             if (homeScore > guestScore) {
@@ -64,6 +66,7 @@ function updateTimer() {
                 return "Both teams have the same score";
             }
         }
+        getHighestScoringTeam();
     } else if (time === 2880){
         function getHighestScoringTeam() {
             if (homeScore > guestScore) {
@@ -78,8 +81,9 @@ function updateTimer() {
                 return "Both teams have the same score";
             }
         }
+        getHighestScoringTeam();
     }
-    getHighestScoringTeam();
+
 }
 // Call the updateTimer function every second (1000 milliseconds for 1 second)
 setInterval(updateTimer, 1000);
