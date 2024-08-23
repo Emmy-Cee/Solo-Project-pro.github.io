@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 console.log(`<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! The Home team has won😃😃 Guest team better luck next time 👍👍</p>`)
             } else if (guestScore > homeScore) {
                 messageOutput.innerHTML = `<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! The Home team has won😃😃 Guest team better luck next time 👍👍<p>`
-                console.log(`<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! The Home team has won😃😃 Guest team better luck next time 👍👍</p>`)
+                console.log(`<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! The Guest team has won😃😃 Home team better luck next time 👍👍</p>`)
             } else {
                 messageOutput.innerHTML = `<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! Both teams took a draw😒😒. Play to win 👍👍<p>`
                 console.log(`<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! The Home team has won😃😃 Guest team better luck next time 👍👍</p>`)
