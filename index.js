@@ -79,6 +79,7 @@ function updateTimer() {
             }
         }
     }
+    getHighestScoringTeam();
 }
 // Call the updateTimer function every second (1000 milliseconds for 1 second)
 setInterval(updateTimer, 1000);
