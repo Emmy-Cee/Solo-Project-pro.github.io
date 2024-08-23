@@ -23,6 +23,8 @@ function updateTimer() {
     }
 
     if (time === 720) {
+        let homeScore = output1
+        let guestScore = output2
         function getHighestScoringTeam() {
             if (homeScore > guestScore) {
                 messageOutput.innerHTML = "<p id='first-message'>End of 1st Quarter</p>" + "<p id='second-message'>Whoo! The Home team has won😃😃" + "Guest team better luck next time👍👍</p>";
@@ -36,7 +38,7 @@ function updateTimer() {
                 return "Both teams have the same score";
             }
         }
-        getHighestScoringTeam();
+        getHighestScoringTeam()
     } else if (time === 1440) {
         function getHighestScoringTeam() {
             if (homeScore > guestScore) {
@@ -51,7 +53,7 @@ function updateTimer() {
                 return "Both teams have the same score";
             }
         }
-        getHighestScoringTeam();
+        getHighestScoringTeam()
     } else if (time === 2160) {
         function getHighestScoringTeam() {
             if (homeScore > guestScore) {
@@ -66,7 +68,7 @@ function updateTimer() {
                 return "Both teams have the same score";
             }
         }
-        getHighestScoringTeam();
+        getHighestScoringTeam()
     } else if (time === 2880){
         function getHighestScoringTeam() {
             if (homeScore > guestScore) {
@@ -81,7 +83,7 @@ function updateTimer() {
                 return "Both teams have the same score";
             }
         }
-        getHighestScoringTeam();
+        getHighestScoringTeam()
     }
 
 }
@@ -130,6 +132,6 @@ function startCounting(){
 document.querySelector(".startGame").addEventListener("click", startCounting)
 
 }
-startCounting();
+startCounting()
 });
 
