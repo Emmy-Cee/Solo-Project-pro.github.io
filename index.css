@@ -134,8 +134,12 @@ button.startGame{
     margin: auto 5px auto 5px;
 }
 
-#message{
-    height: 30px;
+#message-output{
+    color: #1B244A;
+    text-align: center;
+    font-size: xx-large;
+    align-content: center;
+    font-weight: 900;
     margin: 10px;
 }
 

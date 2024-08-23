@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function(){
     let output1 = document.getElementById("home-scores")
     let output2 = document.getElementById("guest-scores")
     let messageOutput = document.querySelector("#message-output")
-    let timer = document.getElementById("time")
     function startCounting(){
         let count = 0
         function add1() {
@@ -40,11 +39,12 @@ document.addEventListener("DOMContentLoaded", function(){
         document.getElementById("guest-add1").addEventListener("click", add1Value)
         document.getElementById("guest-add2").addEventListener("click", add2Value)
         document.getElementById("guest-add3").addEventListener("click", add3Value)
-            
+        
     }
     startCounting();
     // Set the initial time in seconds
     let time = 0;
+    let timer = document.getElementById("time")
     // Create a function to update the timer every second
     function updateTimer() {
     // Update the time and format it as minutes and seconds
@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function(){
         if (time >= 2880) {
             // Start counting after 48 minutes
             time = 0
+            startCounting();
             document.querySelector(".startGame").addEventListener("click", startCounting)
         }
 
@@ -79,11 +80,14 @@ document.addEventListener("DOMContentLoaded", function(){
             }
 
             if (homeScore> guestScore) {
-                messageOutput.innerHTML = '<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! The Home team has won😃😃 Guest team better luck next time👍👍</p>'
+                messageOutput.innerHTML = `<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! The Home team has won😃😃 Guest team better luck next time 👍👍</p>`
+                console.log(`<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! The Home team has won😃😃 Guest team better luck next time 👍👍</p>`)
             } else if (guestScore > homeScore) {
-                messageOutput.innerHTML = '<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! The Home team has won😃😃 Guest team better luck next time👍👍<p>'
+                messageOutput.innerHTML = `<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! The Home team has won😃😃 Guest team better luck next time 👍👍<p>`
+                console.log(`<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! The Home team has won😃😃 Guest team better luck next time 👍👍</p>`)
             } else {
-                messageOutput.innerHTML = '<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! The Home team has won😃😃 Guest team better luck next time👍👍<p>'
+                messageOutput.innerHTML = `<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! Both teams took a draw😒😒. Play to win 👍👍<p>`
+                console.log(`<p id="first-message">${quarterEndMessage}</p><p id="second-message">Whoo! The Home team has won😃😃 Guest team better luck next time 👍👍</p>`)
             }
         }
     }
