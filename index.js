@@ -59,6 +59,7 @@ document.addEventListener("DOMContentLoaded", function(){
         if (time >= 2880) {
             // Start counting after 48 minutes
             time = 0
+            count = 0
             startCounting();
             document.querySelector(".startGame").addEventListener("click", startCounting)
         }
