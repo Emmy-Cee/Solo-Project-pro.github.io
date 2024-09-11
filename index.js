@@ -48,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function(){
     // Create a function to update the timer every second
     function updateTimer() {
     // Update the time and format it as minutes and seconds
-    let minutes = Math.floor(time / 60);
-    let seconds = time % 60;
+    let minutes = Math.floor(time / 60)
+    let seconds = time % 60
     //   Display the formatted time on the timer function
     timer.textContent = `${minutes}:${seconds}`;
     // Increase the time by one second
